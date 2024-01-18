@@ -1,0 +1,45 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-box {
+    width: 340px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    background-color: rgb(226, 184, 236);
+}
+
+.added-color {
+    background-color: rgb(128, 149, 155);
+}
+
+.button-box {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.onclick-button {
+    display: block;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.onclick-button:hover,
+.onclick-button:focus {
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
