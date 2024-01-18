@@ -1,5 +1,6 @@
 h1 {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .main-div {
@@ -21,8 +22,10 @@ h1 {
 }
 
 .button-box {
+    display: flex;
     margin-top: 20px;
     width: 100%;
+    justify-content: center;
 }
 
 .onclick-button {
@@ -34,7 +37,6 @@ h1 {
     font-size: 16px;
     background-color: yellowgreen;
     border-radius: 4px;
-    margin: 0 auto;
 }
 
 .onclick-button:hover,
