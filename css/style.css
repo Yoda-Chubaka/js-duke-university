@@ -3,25 +3,45 @@ h1 {
     text-align: center;
 }
 
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
 .main-div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-list {
     display: flex;
     justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.div-box {
-    width: 340px;
-    padding: 5px;
-    margin: 10px;
+.list-description{
+    width: 310px;
+    min-height: 140px;
     border: 1px solid lightgray;
+    padding: 8px 8px;
+    margin: 10px;
     font-size: 16px;
     background-color: rgb(226, 184, 236);
+    border-radius: 14px;
+
+    &:nth-child(2n) {
+        background-color: rgb(128, 149, 155);
+    }
 }
 
-.added-color {
-    background-color: rgb(128, 149, 155);
-}
-
-.button-box {
+.button-list {
     display: flex;
     margin-top: 20px;
     width: 100%;
@@ -30,7 +50,7 @@ h1 {
 
 .onclick-button {
     display: block;
-    width: 140px;
+    min-width: 140px;
     padding: 5px;
     margin: 10px;
     border: 1px solid lightgray;
@@ -44,4 +64,23 @@ h1 {
     color: white;
     background-color: green;
     cursor: pointer;
+}
+
+/* .demo-div {
+    background-color: red;
+} */
+
+.viseVersaColor {
+    width: 310px;
+    min-height: 140px;
+    border: 1px solid lightgray;
+    padding: 8px 8px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: rgb(128, 149, 155);
+    border-radius: 14px;
+
+    &:nth-child(2n) {
+        background-color: rgb(226, 184, 236);
+    }
 }

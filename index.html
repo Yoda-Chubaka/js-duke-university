@@ -13,28 +13,45 @@
     <h1>Buttons with div practice</h1>
 
     <div class="main-div">
-        <div class="div-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum optio cum et sit saepe dolore, expedita tenetur porro sint, culpa quisquam mollitia eveniet reprehenderit dignissimos, sequi laboriosam ipsa quia?
-         </div>
-     
-         <div class="div-box added-color">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio quam, eum ea repellendus labore debitis dignissimos facilis reiciendis ab ipsum laudantium illo blanditiis eos enim qui recusandae? Veniam, hic?
-         </div>
-
-         <div class="div-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, reprehenderit exercitationem maxime ipsa enim totam fuga ducimus quasi laborum? Eum vero quae velit facilis excepturi corrupti expedita voluptates, tempora nam?
-        </div>
-
-        <div class="div-box added-color">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nisi iure totam, quos magni assumenda facilis blanditiis rerum aliquid, distinctio vitae ipsa delectus cum corrupti iste quia praesentium, libero quaerat.
-        </div>
+        <ul class="main-list">
+            <li id="card1" class="list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur delectus facilis, culpa laboriosam esse, quam quidem iste, nihil laborum ea. Porro ad ea quae neque sed, enim sint. Suscipit.
+            </li>
+         
+             <li id="card2" class="list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit eaque excepturi commodi repudiandae? Porro cumque iusto, alias nesciunt quibusdam dolores adipisci perspiciatis vel molestias illo voluptas, atque suscipit deserunt?
+            </li>
+    
+             <li id="card3" class="list-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ad sequi quae molestiae ducimus! Velit ex iusto soluta, sed, doloremque, necessitatibus corrupti unde placeat sint aliquid cumque consequuntur dolorum impedit!
+            </li>
+    
+            <li id="card4" class="list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rem quam similique rerum voluptas pariatur nisi voluptates. Veritatis numquam, soluta, veniam, accusamus assumenda laborum animi est repudiandae modi velit voluptates.
+            </li>
+        </ul>
     </div>
 
     <div class="button-box">
-        <input class="onclick-button" type="button" value="Change" onclick="dochange()">
-        <input class="onclick-button" type="button" value="Confirm" onclick="doconfirm()">
+        <ul class="button-list">
+            <li>
+                <input class="onclick-button" type="button" value="Change" onclick="doChange()">
+            </li>
+            <li>
+                <input class="onclick-button" type="button" value="Confirm" onclick="doConfirm()">
+            </li>
+            <li>
+                <input class="onclick-button" type="button" value="Change color" onclick="changeColor()">
+            </li>
+            <li>
+                <input class="onclick-button" type="button" value="Change color and text" onclick="changeColor(), changeText()">
+            </li>         
+        </ul>
+        <!-- <div class="demo-div">
+            <p id="demo"></p>
+        </div> -->
     </div>
-    <p id="demo"></p>
+    
 
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
     
