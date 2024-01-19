@@ -36,3 +36,9 @@ function changeText() {
     textBox3.innerHTML = "Hello world! It's my first JS function😎";
     textBox4.innerHTML = "Hello world! It's my first JS function😎";
 }
+
+// Отменить все изменения
+// function resp() {
+//     res.innerHTML = " ";
+//     console.log("Я четвёртая функция - и я очистила блок")
+//   }
