@@ -134,14 +134,14 @@ var radius = 50;
 var isPainting = false;
 
 function setWidth(value) {
-    if (isNumeric() === true) {
-        canvas.width = value;
+    if (isNumeric(value)) {
+        paintcanvas.width = value;
     }
 }
 
 function setHeight(value) {
-    if (isNumeric === true) {
-        canvas.height = value;
+    if (isNumeric(value)) {
+        paintcanvas.height = value;
     }
 }
 
@@ -160,11 +160,6 @@ function paintCircle(x, y) {
 
 // перевірте, щоб value було числовим значенням
 function isNumeric(value) {
-    if (Number.isInteger(value)) {
-        return true;
-    }
-    else {
     // стандартна функція JavaScript, аби визначити, чи рядок можна перетворити рядок на число 
     return !isNaN(value);
-    }
 }
