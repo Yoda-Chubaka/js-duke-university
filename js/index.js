@@ -101,5 +101,21 @@ function clearContext() {
     var ctx2 = colorBox2.getContext("2d");
     ctx1.clearRect(0,0,colorBox1.width, colorBox1.height);
     ctx2.clearRect(0,0,colorBox2.width, colorBox2.height);
+}
 
+function doColor() {
+    var dd1 = document.getElementById("square-canvas-box1");
+    var colorInput = document.getElementById("clr");
+    var color = colorInput.value;
+    dd1.style.backgroundColor = color;
+}
+
+function doSquare() {
+    var dd1 = document.getElementById("square-canvas-box1");
+    var sizeInput = document.getElementById("sldr");
+    var size = sizeInput.value;
+    var ctx = dd1.getContext("2d");
+    ctx.clearRect(0, 0, dd1.width, dd1.height);
+    ctx.fillStyle="yellow";
+    ctx.fillRect(10, 10, size, size);
 }

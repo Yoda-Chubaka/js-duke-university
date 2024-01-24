@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <h1>Buttons with div practice</h1>
 
     <div class="main-div">
+        <h1>Buttons with div practice</h1>
         <ul class="main-list">
             <li id="card1" class="list-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur delectus facilis, culpa laboriosam esse, quam quidem iste, nihil laborum ea. Porro ad ea quae neque sed, enim sint. Suscipit.
@@ -30,58 +30,87 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rem quam similique rerum voluptas pariatur nisi voluptates. Veritatis numquam, soluta, veniam, accusamus assumenda laborum animi est repudiandae modi velit voluptates.
             </li>
         </ul>
+        <div class="button-box">
+            <ul class="button-list">
+                <li>
+                    <input class="onclick-button" type="button" value="Change" onclick="doChange()">
+                </li>
+                <li>
+                    <input class="onclick-button" type="button" value="Confirm" onclick="doConfirm()">
+                </li>
+                <li>
+                    <input class="onclick-button" type="button" value="Change color" onclick="changeColor()">
+                </li>
+                <li>
+                    <input class="onclick-button" type="button" value="Change color and text" onclick="changeColor(), changeText()">
+                </li>         
+            </ul>
+            <!-- <div class="demo-div">
+                <p id="demo"></p>
+            </div> -->
+        </div>
     </div>
 
-    <div class="button-box">
-        <ul class="button-list">
-            <li>
-                <input class="onclick-button" type="button" value="Change" onclick="doChange()">
-            </li>
-            <li>
-                <input class="onclick-button" type="button" value="Confirm" onclick="doConfirm()">
-            </li>
-            <li>
-                <input class="onclick-button" type="button" value="Change color" onclick="changeColor()">
-            </li>
-            <li>
-                <input class="onclick-button" type="button" value="Change color and text" onclick="changeColor(), changeText()">
-            </li>         
-        </ul>
-        <!-- <div class="demo-div">
-            <p id="demo"></p>
-        </div> -->
-    </div>
+    
 
-    <h2>Canvas practice</h2>
     <div class="canvas-container">
-        <canvas id="canvas-box1" class="box-color">
-
-        </canvas>
-        <canvas id="canvas-box2" class="box-color">
-
-        </canvas>
-    </div>
-
-    <div class="button-box">
-        <ul class="button-list">
-
+        <h2>Canvas practice</h2>
+        <ul class="canvas-list">
             <li>
-                <input class="onclick-button" type="button" value="Change color of canvas" onclick="changeColorOfCanvas()">
+                <canvas id="canvas-box1" class="box-color">
+
+                </canvas>
             </li>
             <li>
-                <input class="onclick-button" type="button" value="Make them blue!" onclick="doBlue()">
-            </li>      
-            <li>
-                <input class="onclick-button" type="button" value="Make them yellow!" onclick="doYellow()">
-            </li>     
-            <li>
-                <input class="onclick-button" type="button" value="Draw rectangles" onclick="drawRectangles()">
-            </li> 
-            <li>
-                <input class="onclick-button" type="button" value="Clear context" onclick="clearContext()">
-            </li>  
+                <canvas id="canvas-box2" class="box-color">
+        
+                </canvas>
+            </li>
         </ul>
+        <div class="button-box">
+            <ul class="button-list">
+                <li>
+                    <input class="onclick-button" type="button" value="Change color of canvas" onclick="changeColorOfCanvas()">
+                </li>
+                <li>
+                    <input class="onclick-button" type="button" value="Make them blue!" onclick="doBlue()">
+                </li>      
+                <li>
+                    <input class="onclick-button" type="button" value="Make them yellow!" onclick="doYellow()">
+                </li>     
+                <li>
+                    <input class="onclick-button" type="button" value="Draw rectangles" onclick="drawRectangles()">
+                </li> 
+                <li>
+                    <input class="onclick-button" type="button" value="Clear context" onclick="clearContext()">
+                </li>  
+            </ul>
+        </div>
     </div>
+
+    
+
+    <div class="square-container">
+        <h3>Draw a square with canvas</h3>
+        <ul class="canvas-list">
+            <li id="square-list">
+                <canvas id="square-canvas-box1" class="square-box">
+
+                </canvas>
+            </li>
+        </ul>
+        <div class="button-box">
+            <ul class="button-list">
+                <li>
+                    <input id = "clr" type="color" value="#001A57" onchange="doColor()">
+                </li>
+                <li>
+                    <input id ="sldr" type="range" min="10" max="100" value="10" oninput="doSquare()">
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
     
