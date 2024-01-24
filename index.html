@@ -91,7 +91,7 @@
     
 
     <div class="square-container">
-        <h3>Draw a square with canvas</h3>
+        <h2>Draw a square with canvas</h2>
         <ul class="canvas-list">
             <li id="square-list">
                 <canvas id="square-canvas-box1" class="square-box">
@@ -99,13 +99,39 @@
                 </canvas>
             </li>
         </ul>
-        <div class="button-box">
+        <div class="button-square-box">
             <ul class="button-list">
                 <li>
-                    <input id = "clr" type="color" value="#001A57" onchange="doColor()">
+                    <input id = "clr" class="square-button"  type="color" value="#001A57" onchange="doColor()">
                 </li>
                 <li>
-                    <input id ="sldr" type="range" min="10" max="100" value="10" oninput="doSquare()">
+                    <input id ="sldr" class="range-button" type="range" min="10" max="100" value="10" oninput="doSquare()">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="square-container">
+        <h2>You can draw everything here!</h2>
+        <p>Set Width</p>
+        <input type="text" onchange="setWidth(this.value)">
+        <p>Set Height</p>
+        <input type="text" onchange="setHeight(this.value)">
+        <ul class="canvas-list">
+            <li id="draw-list">
+                <canvas id="canvas1" class="draw-box">
+
+                </canvas>
+            </li>
+        </ul>
+        <div class="button-square-box">
+            <ul class="button-list">
+                <li>
+                    <input id = "clr" class="square-button"  type="color" value="#001A57" onchange="doColor()">
+                </li>
+                <li>
+                    <input id ="sldr" class="range-button" type="range" min="10" max="100" value="10" oninput="doSquare()">
                 </li>
             </ul>
         </div>
