@@ -114,17 +114,34 @@
 
     <div class="square-container">
         <h2>You can draw everything here!</h2>
-        <p>Set Width</p>
-        <input type="text" onchange="setWidth(this.value)">
-        <p>Set Height</p>
-        <input type="text" onchange="setHeight(this.value)">
+        <p>
+            Set Width
+            <input type="text" onchange="setWidth(this.value)">
+        </p>
+        
+        <p>
+            Set Height
+            <input type="text" onchange="setHeight(this.value)">
+        </p>
+        
         <ul class="canvas-list">
             <li id="draw-list">
-                <canvas id="canvas1" class="draw-box">
+                <canvas id="canvas1" class="draw-box" onmousedown="startPaint()" onmouseup="endPaint()" onmousemove="doPaint(event.offsetX, event.offsetY)">
 
                 </canvas>
             </li>
         </ul>
+        <p>
+            Brush color
+            <input type="color" value="#000" onchange="changeColor(this.value)">
+        </p>
+        
+        <p>
+            Brush size
+            <input type="range" id="sizeInput" min="1" max="50" value="50" oninput="resizeBrush(this.value)">
+        <output id="sizeOutput">50</output>
+        </p>
+        
         <div class="button-square-box">
             <ul class="button-list">
                 <li>

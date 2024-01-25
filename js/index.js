@@ -163,3 +163,26 @@ function isNumeric(value) {
     // стандартна функція JavaScript, аби визначити, чи рядок можна перетворити рядок на число 
     return !isNaN(value);
 }
+
+function startPaint() {
+    isPainting = true;
+}
+
+function endPaint() {
+    isPainting = false;
+}
+
+function doPaint(x, y) {
+    if (isPainting === true) {
+        paintCircle(x, y);
+    }
+}
+
+function changeColor(newColor) {
+    color = newColor;
+}
+
+function resizeBrush(newSize) {
+    radius = newSize;
+    document.getElementById("sizeOutput").value = newSize;
+}
